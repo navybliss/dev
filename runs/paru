@@ -1,0 +1,7 @@
+#!bin/bash/env bash
+
+sudo pacman -S --needed --noconfirm base-devel
+
+git clone https://aur.archlinux.org/paru.git $HOME/personal
+cd $HOME/personal/paru
+makepkg -si --noconfirm

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+#curl -f https://zed.dev/install.sh |sh
+# make sure to add zed to your path
+# echo 'export PATH="$HOME/.zed/bin:$PATH"' >> ~/.zshrc

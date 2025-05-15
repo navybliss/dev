@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+## Check for paru
+#sudo pacman -S --needed --noconfirm base-devel
+#git clone https://aur.archlinux.org/paru.git $HOME/personal
+#cd $HOME/personal/paru
+#makepkg -si --noconfirm
+#
+## Install Node.js 22 from the AUR (nodejs-lts or nodejs-bin are also options)
+#paru -S --noconfirm nodejs-22
+#
+## Check if Node.js and npm were installed correctly
+#if ! command -v node &> /dev/null || ! command -v npm &> /dev/null; then
+#  echo "Error: Node.js or npm could not be installed."
+#  exit 1
+#fi
+#echo "Node.js and npm installed successfully."

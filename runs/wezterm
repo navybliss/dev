@@ -1,0 +1,9 @@
+#!bin/bash/env bash
+
+# Check for paru
+sudo pacman -S --needed --noconfirm base-devel
+git clone https://aur.archlinux.org/paru.git $HOME/personal
+cd $HOME/personal/paru
+makepkg -si --noconfirm
+
+paru -S --needed --noconfirm wezterm

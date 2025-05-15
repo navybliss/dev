@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-if command -v paru &> /dev/null; then
-  echo "Paru is already installed. Skipping."
-  exit 0
-fi
-
 mkdir -p "$HOME/personal"
 git clone https://aur.archlinux.org/paru.git "$HOME/personal/paru" || echo "Already cloned. Skipping."
 cd "$HOME/personal/paru"

@@ -1,7 +1,5 @@
-# dev-env
+# dev
 
-bash script to setup a development environment for python, c, and rust
+Hyprland, Wezterm, rofi
 
-Includes nvim config, tmux config, and zsh config.
-
-Custome keymaps for nvim, tmux, git, and fzf
+Custom keymaps for nvim, tmux, git, and fzf

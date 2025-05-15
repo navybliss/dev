@@ -1,4 +1,4 @@
-#!bin/bash/env bash
+#!/usr/bin/env bash
 
 # Check for paru
 sudo pacman -S --needed --noconfirm base-devel

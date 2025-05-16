@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-sudo pacman -S hyprland
+sudo pacman -S --needed --noconfirm hyprland
 
 #sudo pacman -S hyprland-plugins   # gives you hyprpaper, hyprshot, scratchpad, hyprctrl
 

@@ -41,15 +41,32 @@ execute() {
 
 log "=============== dev-env ================="
 
+#copy_dir() {
+#    from=$1
+#    to=$2
+#    pushd $from > /dev/null
+#    dirs=$(find . -mindepth 1 -maxdepth 1 -type d)
+#    for dir in $dirs; do
+#	execute rm -rf $to/$dir
+#	execute cp -r $dir $to/$dir
+#
+#    done
+#    popd > /dev/null
+#}
+
 copy_dir() {
     from=$1
     to=$2
-    pushd $from > /dev/null
+
+    # Make sure the destination exists
+    execute mkdir -p "$to"
+
+    pushd "$from" > /dev/null
+
     dirs=$(find . -mindepth 1 -maxdepth 1 -type d)
     for dir in $dirs; do
-	execute rm -rf $to/$dir
-	execute cp -r $dir $to/$dir
-
+        execute rm -rf "$to/$dir"
+        execute cp -r "$dir" "$to/$dir"
     done
     popd > /dev/null
 }

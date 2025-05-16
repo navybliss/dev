@@ -87,4 +87,4 @@ copy_file .zshenv $USER_HOME
 
 #which one to source first?
 source $XDG_CONFIG_HOME/zsh/.zshrc
-
+hyprctl reload

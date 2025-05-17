@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-sudo pacman -S ghostty
+sudo pacman -S ghostty --needed --noconfirm

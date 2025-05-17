@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
-sudo pacman -S --needed --noconfirm hyprland
+
+mkdir -p "$HOME/personal"
+git clone https://aur.archlinux.org/paru.git "$HOME/personal/paru" || echo "Already cloned. Skipping."
+cd "$HOME/personal/paru"
+makepkg -si --noconfirm
+
+paru -S --noconfirm --noconfirm ninja gcc cmake meson libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite libxrender libxcursor pixman wayland-protocols cairo pango libxkbcommon xcb-util-wm xorg-xwayland libinput libliftoff libdisplay-info cpio tomlplusplus hyprlang-git hyprcursor-git hyprwayland-scanner-git xcb-util-errors hyprutils-git glaze hyprgraphics-git aquamarine-git re2 hyprland-qtutils
+paru -S --needed --noconfirm hyprland
 
 #sudo pacman -S hyprland-plugins   # gives you hyprpaper, hyprshot, scratchpad, hyprctrl
 

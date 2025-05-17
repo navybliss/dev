@@ -1,2 +1,8 @@
 #!/usr/bin/env bash
-sudo pacman -S ghostty --needed --noconfirm
+
+mkdir -p "$HOME/personal"
+git clone https://aur.archlinux.org/paru.git "$HOME/personal/paru" || echo "Already cloned. Skipping."
+cd "$HOME/personal/paru"
+makepkg -si --noconfirm
+
+paru -S ghostty --needed --noconfirm

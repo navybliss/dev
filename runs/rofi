@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 #paru -S rofi-lbonn-wayland
-#paru -S rofi-calc
 
-sudo pacman -S --needed --noconfirm rofi
+paru -S --needed --noconfirm rofi-wayland

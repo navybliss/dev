@@ -4,6 +4,11 @@
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
+export XDG_SESSION_TYPE=wayland
+export XDG_CURRENT_DESKTOP=Hyprland
+export XDG_BACKEND=wayland
+export QT_QPA_PLATFORM=wayland
+
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000

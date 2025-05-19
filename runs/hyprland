@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
-mkdir -p "$HOME/personal"
-git clone https://aur.archlinux.org/paru.git "$HOME/personal/paru" || echo "already cloned. skipping."
-cd "$HOME/personal/paru"
-makepkg -si --noconfirm
+if [[ ! -d "$HOME/personal/paru" ]]; then
+  git clone https://aur.archlinux.org/paru.git "$HOME/personal/paru"
+  cd "$HOME/personal/paru"
+  makepkg -si --noconfirm
+else
+  echo "paru already installed, skipping"
+fi
 
 paru -S --noconfirm --needed hyprland
 

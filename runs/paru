@@ -1,7 +1,9 @@
 #!bin/bash/env bash
 
-sudo pacman -S --needed --noconfirm base-devel
-
-git clone https://aur.archlinux.org/paru.git $HOME/personal/paru
-cd $HOME/personal/paru
-makepkg -si --noconfirm
+if [[ ! -d "$HOME/personal/paru" ]]; then
+  git clone https://aur.archlinux.org/paru.git "$HOME/personal/paru"
+  cd "$HOME/personal/paru"
+  makepkg -si --noconfirm
+else
+  echo "paru already installed, skipping"
+fi

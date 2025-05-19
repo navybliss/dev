@@ -2,7 +2,7 @@
 
 # Check for paru
 #sudo pacman -S --needed --noconfirm base-devel
-#git clone https://aur.archlinux.org/paru.git $HOME/personal
+#git clone https://aur.archlinux.org/paru.git $HOME/personal/paru
 #cd $HOME/personal/paru
 #makepkg -si --noconfirm
 #

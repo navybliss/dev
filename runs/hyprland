@@ -8,7 +8,8 @@ else
   echo "paru already installed, skipping"
 fi
 
-paru -S --noconfirm --needed hyprland
+#paru -S --noconfirm --needed hyprland
+sudo pacman -S hyprland
 
 paru -S --needed --noconfirm sddm-git
 paru -S --needed --noconfirm mako # notification daemon

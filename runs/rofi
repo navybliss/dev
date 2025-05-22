@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #paru -S rofi-lbonn-wayland
 
+mkdir -p "$HOME/personal"
+
 if [[ ! -d "$HOME/personal/paru" ]]; then
   git clone https://aur.archlinux.org/paru.git "$HOME/personal/paru"
   cd "$HOME/personal/paru"

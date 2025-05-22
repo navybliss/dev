@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 mkdir -p "$HOME/personal"
+
 git clone https://aur.archlinux.org/paru.git "$HOME/personal/paru" || echo "Already cloned. Skipping."
 cd "$HOME/personal/paru"
 makepkg -si --noconfirm

@@ -11,7 +11,7 @@ else
 fi
 
 #paru -S --noconfirm --needed hyprland
-sudo pacman -S hyprland
+sudo pacman -S hyprland --needed --noconfirm
 
 paru -S --needed --noconfirm sddm-git
 paru -S --needed --noconfirm mako # notification daemon
@@ -22,8 +22,8 @@ paru -S --needed --noconfirm hyprland-polkit-agent # handles gui popups
 sudo pacman -S --needed --noconfirm qt5-wayland qt6-wayland # qt app support
 
 sudo pacman -S --needed --noconfirm hyprpaper
-paru -S hyprpicker-git # color picker
-sudo pacman -S udiskie # auto mount usbs etc
+paru -S hyprpicker-git --needed --noconfirm # color picker
+sudo pacman -S udiskie --needed --noconfirm # auto mount usbs etc
 
 
 

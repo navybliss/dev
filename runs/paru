@@ -3,7 +3,7 @@
 mkdir -p "$HOME/personal"
 
 if [[ ! -d "$HOME/personal/paru" ]]; then
-  git clone https://aur.archlinux.org/paru.git "$HOME/personal/paru"
+ GIT_SSL_NO_VERIFY=1  git clone https://aur.archlinux.org/paru.git "$HOME/personal/paru"
   cd "$HOME/personal/paru"
   makepkg -si --noconfirm
 else
